@@ -1,0 +1,26 @@
+{
+  "name": "hackernews-top30",
+  "version": "1.0.0",
+  "description": "Display the title of the top 30 hacker news stories and the top 10 commenter names of these stories with the total number of comments that they posted",
+  "main": "index.js",
+  "repository": "https://www.github.com/IliasDeros/hackernews-top30",
+  "author": "Ilias <ideros21@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "webpack-dev-server"
+  },
+  "dependencies": {
+    "html-webpack-plugin": "^2.30.1",
+    "path": "^0.12.7",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "webpack": "^3.5.6",
+    "webpack-dev-server": "^2.8.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1"
+  }
+}
