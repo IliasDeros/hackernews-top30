@@ -16,7 +16,7 @@ export default class Story extends React.Component {
 
   render(){
     return (
-      <li>{this.props.commenter.id} - {this.state.score} comments</li>
+      <li className="item">{this.props.commenter.id} - {this.state.score} comments</li>
     )
   }
 }

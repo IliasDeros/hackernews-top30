@@ -3,6 +3,58 @@
   <head>
     <meta charset="utf-8">
     <title>Hackernews TOP30</title>
+
+    <!-- Leaving inline style as I'm not clear on how to import css files using webpack -->
+    <style>
+      body {
+        background: #d17900; /* Old browsers */
+        background: -moz-linear-gradient(-45deg, #d17900 0%, #eaba72 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(-45deg, #d17900 0%,#eaba72 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(135deg, #d17900 0%,#eaba72 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d17900', endColorstr='#eaba72',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+        font-family: Arial;
+      }
+
+      .topstories-container {
+        min-height: 400px;
+      }
+
+      .card {
+        box-shadow: 0 4px 16px 0 rgba(0,0,0,0.2);
+        list-style: none;
+        padding: 30px 80px;
+        background: white;
+        margin: 50px;
+      }
+
+      .item {
+        margin-bottom: 12px;
+      }
+
+      @media all and (min-width: 1080px){
+        .author:before {
+          content: '-';
+          margin-left: 16px;
+          margin-right: 16px;
+        }
+      }
+
+      @media all and (max-width: 1080px){
+        .card {
+          text-align: center;
+        }
+        .author {
+          display: block;
+        }
+      }
+
+      .header {
+        color: white;
+        margin-left: 15px;
+        font-family: Lato;
+      }
+    </style>
   </head>
   <body>
     <div id="root" />

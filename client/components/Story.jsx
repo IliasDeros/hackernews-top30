@@ -9,7 +9,9 @@ export default class Story extends React.Component {
 
   render(){
     return (
-      <li><a href={`${this.url}`} target="_blank">{this.title}</a> - {this.author}</li>
+      <li className='item'>
+       <a href={`${this.url}`} target="_blank">{this.title}</a><span className="author">{this.author}</span>
+      </li>
     )
   }
 }

@@ -14,7 +14,7 @@ export default class TopCommenters extends React.Component {
 
   render(){
     return (
-      <ul>
+      <ul className="topcommenters-container card">
         {(() => this.state.commenters ?
           this.state.commenters.map(createCommenter.bind(this)) :
           <li>Awarding best commenters...</li>

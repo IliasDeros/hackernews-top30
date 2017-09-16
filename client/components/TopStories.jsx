@@ -14,7 +14,7 @@ export default class TopStories extends React.Component {
 
   render(){
     return (
-      <ul>
+      <ul className="topstories-container card">
         {(() => this.state.stories ?
           this.state.stories.map(createStory.bind(this)) :
           <li>Looking for the best stories...</li>
